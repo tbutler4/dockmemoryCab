@@ -8,6 +8,14 @@ const mongoose = require('mongoose');
 app.set('views', path.join(__dirname, './client/views'));
 
 app.set('view engine', 'ejs');
+// Connect to MongoDB
+mongoose
+  .connect(
+    'mongodb://mongo:27017/docker-node-mongo',
+    { useNewUrlParser: true }
+  )
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.log(err));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 // connection to angular below
