@@ -1,0 +1,21 @@
+{
+  "name": "dockmemcab",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.6",
+    "body-parser": "^1.18.3",
+    "connect": "^3.6.6",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.5",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "description": ""
+}
